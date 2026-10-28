@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slipsvilie-compress_jd389"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出模型压缩工程师·算子融合的收益边界上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "slipsvilie" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://slipsvilie.github.io"
+Repository = "https://github.com/slipsvilie/compress_jd389"
+Issues = "https://github.com/slipsvilie/compress_jd389/issues"
+
+[project.scripts]
+compress_jd389 = "compress_jd389:main"
+
+[tool.setuptools]
+py-modules = ["compress_jd389"]
